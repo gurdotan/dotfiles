@@ -155,3 +155,6 @@ alias reload="exec $SHELL -l"
 
 # Faster npm for europeans
 command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu"
+
+# Android SDK aliases
+alias android-list-packages="adb shell 'pm list packages -f' | cut -d = -f '2'"
