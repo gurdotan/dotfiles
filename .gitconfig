@@ -33,6 +33,17 @@
 	fm = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short --grep=$1; }; f"
 	# Remove branches that have already been merged with master
 	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+	st = status
+	br = branch
+	co = checkout
+	ci = commit
+	df = diff
+	nffmerge = merge --no-ff
+	logk = log --graph --pretty=oneline --abbrev-commit --decorate
+	log-color = log --graph --full-history --all --color --pretty=format:'%x1b[31m%h%x09%x1b[32m %C(white)- %d%x1b[0m%x20%s %Cgreen(%cr) %C(bold blue)<%an>%Creset'  --date=relative
+	mb = merge-base
+	cpick = cherry-pick
+	branch-note = "!git config branch.$(git symbolic-ref HEAD|sed \"s/refs\\/heads\\///\").note $( if [ $# -gt 0 ]; then $1; fi)"
 
 [apply]
 	# Detect whitespace errors when applying a patch

@@ -1,0 +1,12 @@
+# Add NDK_ROOT env. variable
+[ -d "$HOME"/tools/android-ndk-r9c ] && export NDK_ROOT=$HOME/tools/android-ndk-r9c
+
+# Add Android SDK executables to path
+[ -d "$HOME"/tools/android-sdk-macosx ] && PATH="$HOME/tools/android-sdk-macosx/platform-tools:$HOME/tools/android-sdk-macosx/tools:$PATH"
+
+# RVM related
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# Export all definitions
+export PATH=/usr/local/bin:$PATH
