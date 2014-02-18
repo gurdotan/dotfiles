@@ -50,3 +50,9 @@ install lua52
 
 # Remove outdated versions from the cellar
 cleanup
+
+
+
+# Gur: Add the z script to the command line
+# install z
+
