@@ -56,3 +56,6 @@ cleanup
 # Gur: Add the z script to the command line
 # install z
 
+# Gur: Add the jq tool for command line JSON parsing
+# install jq
+
