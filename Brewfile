@@ -58,4 +58,6 @@ cleanup
 
 # Gur: Add the jq tool for command line JSON parsing
 # install jq
+# Gur: Add the pstree tool for showing a process tree
+# install pstree
 
