@@ -56,8 +56,7 @@ cleanup
 # Gur: Add the z script to the command line
 # install z
 
-# Gur: Add the jq tool for command line JSON parsing
-# install jq
-# Gur: Add the pstree tool for showing a process tree
-# install pstree
-
+install jq          # Add the jq tool for command line JSON parsing
+install pstree      # Add the pstree tool for showing a process tree
+install multitail   # CLI utility for tailing multiple files at once
+install ack         # a better grep
