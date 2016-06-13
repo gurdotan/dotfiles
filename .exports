@@ -32,3 +32,5 @@ export HISTTIMEFORMAT="%d/%m/%y %T "
 # export AWS_ACCESS_KEY=your-aws-access-key-id
 # export AWS_SECRET_KEY=your-aws-secret-key
 
+# Android
+# export ANDROID_HOME=<your android home dir>

@@ -312,3 +312,13 @@ function np() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX
 }
+
+# Change the terminal tab name and window name
+# Based on: http://thelucid.com/2012/01/04/naming-your-terminal-tabs-in-osx-lion/
+function tabname {
+	printf "\e]1;$1\a"
+}
+function winname {
+	printf "\e]2;$1\a"
+}
+
