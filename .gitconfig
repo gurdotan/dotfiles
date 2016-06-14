@@ -7,8 +7,14 @@
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
 	# `git di $number` shows the diff between the state `$number` revisions ago and the current state
 	di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
+	# Pull in remote changes for the current repository
+	p = !"git pull"
 	# Pull in remote changes for the current repository and all its submodules
-	p = !"git pull; git submodule foreach git pull origin master"
+	pp = !"git pull; git submodule foreach git pull origin master"
+	# Pull in remote changes on master branch only
+	pom = !"git push origin master"
+	# Update all submodules recursively, and initiate ones that haven't been yet
+	supir = !"git submodule update --init --recursive"
 	# Clone a repository including all submodules
 	c = clone --recursive
 	# Commit all changes
@@ -62,6 +68,7 @@
 	# Make `git rebase` safer on OS X
 	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
 	trustctime = false
+	autocrlf = input
 
 [color]
 	# Use colors in Git commands that are capable of colored output when
@@ -83,6 +90,7 @@
 [merge]
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
+	tool = diffmerge
 
 # URL shorthands
 [url "git@github.com:"]
@@ -100,3 +108,23 @@
 
 [push]
 	default = matching
+#[diff]
+#	tool = rubymine
+#[difftool "rubymine"]
+#	cmd = rubymine diff \"$LOCAL\" \"$REMOTE\"
+[diff]
+	tool = meld
+[difftool "diffmerge"]
+	cmd = meld \"$LOCAL\" \"$REMOTE\"
+[mergetool "diffmerge"]
+	cmd = diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+	trustexitcode = false
+[user]
+	name = Gur Dotan
+	email = gurdotan@gmail.com
+[credential]
+	helper = osxkeychain
+
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
