@@ -1,0 +1,2 @@
+# Add AWS auto completion
+complete -C aws_completer aws

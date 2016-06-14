@@ -42,10 +42,11 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
+# Add more completions
+[ -r "~/.completion" ] && [ -f "~/.completion" ] && source "~/.completion"
+
 # If possible, init the Z script
 # https://github.com/rupa/z
 if [ -f $(brew --prefix)/etc/profile.d/z.sh ]; then
   . $(brew --prefix)/etc/profile.d/z.sh
 fi
-
-
