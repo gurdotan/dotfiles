@@ -52,10 +52,19 @@ brew install rename
 brew install tree
 brew install zopfli
 
-# Gur: install more stuff
+# Gur: install more utilities
 brew install jq          # Add the jq tool for command line JSON parsing
 brew install pstree      # Add the pstree tool for showing a process tree
 brew install multitail   # CLI utility for tailing multiple files at once
+brew install entr        # Like watch
+brew install sshrc       # Bring your shell to SSH sessions
+
+
+# Gur: install dev environment
+brew install mongodb
+brew install redis
+brew install mysql
+brew install awscli
 
 
 # Remove outdated versions from the cellar.
