@@ -58,6 +58,7 @@ brew install pstree      # Add the pstree tool for showing a process tree
 brew install multitail   # CLI utility for tailing multiple files at once
 brew install entr        # Like watch
 brew install sshrc       # Bring your shell to SSH sessions
+brew install ssh-copy-id # Copy public keys directly to remote machines' authorized keys
 
 
 # Gur: install dev environment
