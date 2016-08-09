@@ -62,10 +62,10 @@ brew install ssh-copy-id # Copy public keys directly to remote machines' authori
 
 
 # Gur: install dev environment
-brew install mongodb
-brew install redis
-brew install mysql
-brew install awscli
+#brew install mongodb
+#brew install redis
+#brew install mysql
+#brew install awscli
 
 
 # Remove outdated versions from the cellar.
