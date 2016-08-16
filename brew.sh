@@ -65,11 +65,30 @@ brew install ssh-copy-id # Copy public keys directly to remote machines' authori
 
 
 # Gur: install dev environment
-#brew install mongodb
-#brew install redis
-#brew install mysql
-#brew install awscli
+# brew install mongodb
+# brew install redis
+# brew install mysql
+# brew install awscli
+# brew install posgresql
+# brew install jenv
+# brew install maven
 
+
+
+# Gur: install OSX applications with Brew Cask
+#
+# brew cask install google-chrome
+# brew cask install iterm2
+# brew cask install slack
+# brew cask install skitch
+# brew cask install atom
+# brew cask install spectacle
+# brew cask install docker
+# brew cask install spotify
+# brew cask install whatsapp
+# brew cask install java
+# brew cask install tunnelblick
 
 # Remove outdated versions from the cellar.
 brew cleanup
+brew cask cleanup
