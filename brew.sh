@@ -87,6 +87,7 @@ brew install ssh-copy-id # Copy public keys directly to remote machines' authori
 # brew cask install spotify
 # brew cask install whatsapp
 # brew cask install java
+# brew cask install skype
 # brew cask install tunnelblick
 
 # Remove outdated versions from the cellar.
