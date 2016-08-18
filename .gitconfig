@@ -73,6 +73,9 @@
 	cpick = cherry-pick
 	branch-note = "!git config branch.$(git symbolic-ref HEAD|sed \"s/refs\\/heads\\///\").note $( if [ $# -gt 0 ]; then $1; fi)"
 
+	# Checkout branch using FZF (fuzzy finder)
+	cof = "!git checkout `git branch | fzf`"
+	
 	# List contributors with number of commits
 	contributors = shortlog --summary --numbered
 
