@@ -62,7 +62,7 @@ brew install multitail   # CLI utility for tailing multiple files at once
 brew install entr        # Like watch
 brew install sshrc       # Bring your shell to SSH sessions
 brew install ssh-copy-id # Copy public keys directly to remote machines' authorized keys
-
+brew install fzf         # Fuzzy file finding: https://github.com/junegunn/fzf
 
 # Gur: install dev environment
 # brew install mongodb
