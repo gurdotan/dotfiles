@@ -1,5 +1,6 @@
 packages: [
   "atom-ternjs"
+  "atom-beautify"
   "autocomplete-python"
   "color-picker"
   "csscomb"
