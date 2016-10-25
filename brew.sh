@@ -56,13 +56,15 @@ brew install tree
 brew install zopfli
 
 # Gur: install more utilities
-brew install jq          # Add the jq tool for command line JSON parsing
-brew install pstree      # Add the pstree tool for showing a process tree
-brew install multitail   # CLI utility for tailing multiple files at once
-brew install entr        # Like watch
-brew install sshrc       # Bring your shell to SSH sessions
-brew install ssh-copy-id # Copy public keys directly to remote machines' authorized keys
-brew install fzf         # Fuzzy file finding: https://github.com/junegunn/fzf
+brew install jq          			# Add the jq tool for command line JSON parsing
+brew install pstree      			# Add the pstree tool for showing a process tree
+brew install multitail   			# CLI utility for tailing multiple files at once
+brew install entr        			# Like watch
+brew install sshrc       			# Bring your shell to SSH sessions
+brew install ssh-copy-id 			# Copy public keys directly to remote machines' authorized keys
+brew install fzf         			# Fuzzy file finding: https://github.com/junegunn/fzf
+brew install diff-so-fancy		# Better git diffs: https://github.com/so-fancy/diff-so-fancy
+
 
 # Gur: install dev environment
 # brew install mongodb
