@@ -91,6 +91,8 @@ brew install diff-so-fancy		# Better git diffs: https://github.com/so-fancy/diff
 # brew cask install java
 # brew cask install skype
 # brew cask install tunnelblick
+# brew cask install git-extras
+
 
 # Remove outdated versions from the cellar.
 brew cleanup
