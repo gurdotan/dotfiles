@@ -62,6 +62,7 @@ brew install sshrc       			# Bring your shell to SSH sessions
 brew install ssh-copy-id 			# Copy public keys directly to remote machines' authorized keys
 brew install fzf         			# Fuzzy file finding: https://github.com/junegunn/fzf
 brew install diff-so-fancy		# Better git diffs: https://github.com/so-fancy/diff-so-fancy
+brew install ripgrep					# grep on steroids: https://github.com/BurntSushi/ripgrep
 
 
 # Gur: install dev environment
