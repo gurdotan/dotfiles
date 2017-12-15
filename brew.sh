@@ -78,19 +78,30 @@ brew install diff-so-fancy		# Better git diffs: https://github.com/so-fancy/diff
 # Gur: install OSX applications with Brew Cask
 #
 # brew cask install google-chrome
+# brew cask install firefox
+# brew cask install google-drive
+# brew cask install flux
 # brew cask install iterm2
 # brew cask install slack
 # brew cask install skitch
 # brew cask install atom
 # brew cask install spectacle
-# brew cask install docker
 # brew cask install spotify
 # brew cask install whatsapp
-# brew cask install java
 # brew cask install skype
 # brew cask install tunnelblick
 # brew cask install git-extras
 
+# Gur: Development tools
+#
+# brew cask install java
+# brew cask install android-sdk
+# brew cask install dbeaver-community
+# brew cask install docker
+# brew cask install kitematic
+# brew cask install sourcetree
+# brew cask install fiddler
+# brew cask install intellij-idea
 
 # Remove outdated versions from the cellar.
 brew cleanup
