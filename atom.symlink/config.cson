@@ -1,37 +1,26 @@
 "*":
-  "atom-ternjs": {}
-  "autocomplete-plus": {}
+  "atom-beautify":
+    general:
+      _analyticsUserId: "d9e6fa76-fd0b-49f3-a88f-6e38ebf7e437"
+    json:
+      brace_style: "end-expand"
+  "autocomplete-python":
+    useKite: false
   core:
-    themes: [
-      "atom-dark-ui"
-      "seti-syntax"
-    ]
+    telemetryConsent: "no"
   editor:
-    fontSize: 15
-    invisibles: {}
+    fontSize: 17
   "exception-reporting":
-    userId: "dbaef2b0-fa91-c3a4-e1cf-63524183f17d"
-  "git-blame": {}
-  "git-plus": {}
-  metrics:
-    userId: "62792b2f3260d69489a4ae8ae86f14fe2279a504"
+    userId: "d28a0b12-2099-e7e9-1a08-12cde7667f6b"
   minimap:
     plugins:
-      "git-diff": false
+      "git-diff": true
       "git-diffDecorationsZIndex": 0
       "highlight-selected": true
       "highlight-selectedDecorationsZIndex": 0
   "package-sync":
     createOnChange: true
-  "python-tools": {}
-  "release-notes":
-    viewedVersion: "0.95.0"
-  "remote-edit":
-    showHiddenFiles: true
-    sshPrivateKeyPath: "~/.ssh/soomla2.pem"
-  "tree-view":
-    hideVcsIgnoredFiles: true
+    forceOverwrite: true
+  "tree-view": {}
   welcome:
     showOnStartup: false
-  wordcount:
-    alwaysOn: true
