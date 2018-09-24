@@ -63,6 +63,7 @@ brew install ssh-copy-id 			# Copy public keys directly to remote machines' auth
 brew install fzf         			# Fuzzy file finding: https://github.com/junegunn/fzf
 brew install diff-so-fancy		# Better git diffs: https://github.com/so-fancy/diff-so-fancy
 brew install ripgrep					# grep on steroids: https://github.com/BurntSushi/ripgrep
+brew install bat							# A cat(1) clone with wings.  https://github.com/sharkdp/bat
 
 
 # Gur: install dev environment
