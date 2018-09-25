@@ -158,3 +158,8 @@ command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.e
 
 # Android SDK aliases
 alias android-list-packages="adb shell 'pm list packages -f' | cut -d = -f '2'"
+
+# More utitilies based on https://remysharp.com/2018/08/23/cli-improved
+alias cat='bat'
+alias ping='prettyping --nolegend'
+alias du="ncdu --color dark -rr -x"

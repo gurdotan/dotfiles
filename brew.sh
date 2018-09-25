@@ -64,7 +64,9 @@ brew install fzf         			# Fuzzy file finding: https://github.com/junegunn/fz
 brew install diff-so-fancy		# Better git diffs: https://github.com/so-fancy/diff-so-fancy
 brew install ripgrep					# grep on steroids: https://github.com/BurntSushi/ripgrep
 brew install bat							# A cat(1) clone with wings.  https://github.com/sharkdp/bat
-
+brew install prettyping       # An alternative to ping: https://github.com/denilsonsa/prettyping
+brew install tldr             # Community driven man pages: https://github.com/tldr-pages/tldr
+brew install fd               # A simple, fast and user-friendly alternative to 'find': https://github.com/sharkdp/fd
 
 # Gur: install dev environment
 # brew install mongodb
