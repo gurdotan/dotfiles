@@ -8,13 +8,11 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
-<<<<<<< HEAD
-# Add cask
-brew tap caskroom/cask
-=======
 # Save Homebrew’s installed location.
 BREW_PREFIX=$(brew --prefix)
->>>>>>> upstream/master
+
+# Add cask
+brew tap caskroom/cask
 
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.

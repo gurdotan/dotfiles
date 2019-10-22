@@ -209,17 +209,23 @@
 [url "git://gist.github.com/"]
 	insteadOf = "gist:"
 
-#[diff]
-#	tool = rubymine
-#[difftool "rubymine"]
-#	cmd = rubymine diff \"$LOCAL\" \"$REMOTE\"
+#
+# Based on https://gist.github.com/rambabusaravanan/1d1902e599c9c680319678b0f7650898
+#
+
+[merge]
+    tool = intellij
+[mergetool "intellij"]
+    cmd = /Applications/IntelliJ\\ IDEA.app/Contents/MacOS/idea merge $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE") $(cd $(dirname "$BASE") && pwd)/$(basename "$BASE") $(cd $(dirname "$MERGED") && pwd)/$(basename "$MERGED")
+    trustExitCode = true
 [diff]
-	tool = meld
-[difftool "diffmerge"]
-	cmd = meld \"$LOCAL\" \"$REMOTE\"
-[mergetool "diffmerge"]
-	cmd = diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
-	trustexitcode = false
+    tool = intellij
+[difftool "intellij"]
+    cmd = /Applications/IntelliJ\\ IDEA.app/Contents/MacOS/idea diff $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE")
+[difftool]
+		prompt = false
+
+
 [user]
 	name = Gur Dotan
 	email = gurdotan@gmail.com
